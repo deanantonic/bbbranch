@@ -1,0 +1,104 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% block title %}{% page_attribute "page_title" %}{% endblock %} - {{ request.site.name }}</title>
+<meta name="description" content="{% block meta_description %}{% page_attribute "meta_description" %}{% endblock %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="{% block link_canonical %}http{% if request.is_secure %}s{% endif %}://{{ request.site }}{{ request.path }}{% endblock %}">
+
+{% addtoblock "css" %}
+<!--  <link rel="stylesheet" href="{% static "site/css/main.css" %}">-->
+  <link href="{% static "assets/css/bootstrap.css" %}" rel="stylesheet">
+  <link href="{% static "assets/css/ionicons.min.css" %}" rel="stylesheet">
+  <link href="{% static "assets/css/style.css" %}" rel="stylesheet">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+  <script src="{% static "site/js/main.js" %}"></script>
+  <script src="{% static "assets/js/ie10-viewport-bug-workaround.js" %}"></script>
+  <script src="{% static "assets/js/jquery.min.js" %}"></script>
+  <script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+  <script src="{% static "assets/js/retina-1.1.0.js" %}"></script>
+  <script src="{% static "assets/js/jquery.hoverdir.js" %}"></script>
+  <script src="{% static "assets/js/jquery.hoverex.min.js" %}"></script>
+  <script src="{% static "assets/js/jquery.prettyPhoto.js" %}"></script>
+  <script src="{% static "assets/js/jquery.isotope.min.js" %}"></script>
+  <script src="{% static "assets/js/custom.js" %}"></script>
+{% endaddtoblock %}
+
+{% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
+</head>
+<body>
+{% cms_toolbar %}
+<!--[if lt IE 8]>
+<p class="browserupgrade">{% blocktrans %}You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.{% endblocktrans %}</p>
+<![endif]-->
+
+<header>
+  <ul>
+    <h1>
+       {% show_menu 0 1 100 100 %}
+    </h1>
+  </ul>
+</header>
+
+
+{% block header %}
+    <div id="h">
+      <div class="logo">
+        <h2>BASIC</h2>
+      </div><!--/logo-->
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>{% page_attribute "page_title" %}</h1>
+          </div>
+        </div><!--/row-->
+
+        <div class="row mt">
+          <div class="col-sm-4">
+            <i class="ion-ios7-monitor-outline"></i>
+            <h3>Web Design</h3>
+          </div><!--/col-md-4-->
+
+          <div class="col-sm-4">
+            <i class="ion-ios7-browsers-outline"></i>
+            <h3>UI Development</h3>
+          </div><!--/col-md-4-->
+
+          <div class="col-sm-4">
+            <i class="ion-ios7-copy-outline"></i>
+            <h3>Brand Identity</h3>
+          </div><!--/col-md-4-->
+        
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--H-->
+{% endblock %}
+
+
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#"><i class="ion-social-twitter"></i></a>
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+          </div><!--/col-md-8-->
+        </div>
+      </div><!--/container-->
+    </div><!--/.F-->
+{% endblock %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+{% render_block "js" postprocessor "compressor.contrib.sekizai.compress" %}
+</body>
+</html>

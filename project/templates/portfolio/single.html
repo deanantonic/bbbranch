@@ -1,0 +1,85 @@
+{% extends "default.html" %}
+{% load staticfiles %}
+
+{% block header %}
+    <div id="h2">
+      <div class="logo">
+        <a href="/"><h2>BASIC</h2></a>
+      </div><!--/logo-->
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5>BRANDING & DESIGN</h5>
+            <h1>Rebranding project for <b>{{ object.title }}</b>.</h1>
+            <h3>Lorem Ipsum is simply dummy text<br/>of the printing and typesetting industry.</h3>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--H-->
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="container ptb">
+      <div class="row">
+        <h2 class="centered mb">Project Description & Results.</h2>
+        <div class="col-md-4">
+          <h5><b>THE CLIENT</b></h5>
+          <p>{{ object.the_client }}</p>
+        </div><!--/col-md-4-->
+        <div class="col-md-4">
+          <h5><b>THE PROPOSAL</b></h5>
+          <p>{{ object.the_proposal }}</p>
+        </div><!--/col-md-4-->
+        <div class="col-md-4">
+          <h5><b>THE RESULTS</b></h5>
+          <p>{{ object.the_result }}</p>
+        </div><!--/col-md-4-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 centered">
+          <img src="{{ object.featured_image.url }}" width="200" alt="">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2><b>{{ object.monthly_visits }}</b></h2>
+              <h6>MONTHLY VISITS REGISTERED</h6>
+            </div><!--/col-sm-4-->
+            <div class="col-sm-4">
+              <h2><b>5.863</b></h2>
+              <h6>USERS SUBSCRIBED</h6>
+            </div><!--/col-sm-4-->
+            <div class="col-sm-4">
+              <h2><b>24</b></h2>
+              <h6>THEMES PUBLISHED</h6>
+            </div><!--/col-sm-4-->
+          </div><!--/.row-->
+        </div><!--/col-md-10-->
+      </div><!--/row-->
+
+      <div class="row mt">
+        <div class="col-md-8 col-md-offset-2">
+          <img src="{% static "assets/img/screen.png" %}" class="img-responsive aligncenter" alt="">
+        </div>
+      </div><!--/.row-->
+
+    </div><!--/.container-->
+
+    <div id="g">
+      <div class="container">
+        <div class="row centered">
+          <h2>Carlos - BlackTie CEO.</h2>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Work with Basic was an awesome experience.<br/>They understood exactly what we want<br/>and what we need for our brand.</p>
+
+          </div><!--/col-md-8-->
+        </div><!--/row-->
+      </div><!--/.container-->
+    </div>
+
+
+
+{% endblock %}
+
