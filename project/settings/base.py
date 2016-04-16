@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'debug_toolbar',
     'social.apps.django_app.default',
     'cms',
     'mptt',
@@ -92,8 +93,10 @@ MIGRATION_MODULES = {
 
 
 MIDDLEWARE_CLASSES = [
+
     'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.gzip.GZipMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'htmlmin.middleware.HtmlMinifyMiddleware',
     'htmlmin.middleware.MarkRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',

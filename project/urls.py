@@ -39,3 +39,10 @@ urlpatterns += i18n_patterns(
     url(r'^user/', include('social.apps.django_app.urls', namespace='social')),
     url(r'^', include('cms.urls')),
 )
+
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += (
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    )
