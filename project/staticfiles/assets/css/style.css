@@ -65,6 +65,7 @@ body {
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 80px; padding-bottom: 80px;}
+.big {font-size: 72px}
 
 .clear {
 	clear: both;
@@ -201,6 +202,20 @@ input {
 }
 
 /* HEADER SECTION */
+
+
+
+/* buttons */
+#buttons {
+
+	background: #D3D9DB;
+}
+/* carousel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
 
 
 

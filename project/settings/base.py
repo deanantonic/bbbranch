@@ -241,6 +241,7 @@ CMS_TEMPLATES = [
     ('default.html', _('Default')),
     ('about.html', _('About')),
     ('with_sidebar.html', _('Sidebar')),
+    ('contact.html', _('Contact')),
 ]
 CMS_PLACEHOLDER_CONF = {
     'body': {
