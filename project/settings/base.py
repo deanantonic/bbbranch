@@ -79,6 +79,7 @@ INSTALLED_APPS = [
     'rosetta',
     'utils',
     'portfolio',
+    'contact_form',
 ]
 
 
@@ -241,7 +242,6 @@ CMS_TEMPLATES = [
     ('default.html', _('Default')),
     ('about.html', _('About')),
     ('with_sidebar.html', _('Sidebar')),
-    ('contact.html', _('Contact')),
 ]
 CMS_PLACEHOLDER_CONF = {
     'body': {
@@ -294,3 +294,18 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters',
 )
+
+
+
+
+EMAIL_USE_TLS = True  
+EMAIL_HOST = 'smtp.gmail.com'  
+EMAIL_PORT = 587  
+EMAIL_HOST_USER = 'mezzaninegm@gmail.com'  # this is my email address, use yours
+EMAIL_HOST_PASSWORD = 'your_password'   # set environ yourself
+
+ADMINS = (
+    ('your_name', 'your_email'),   # email will be sent to your_email
+)
+
+MANAGERS = ADMINS

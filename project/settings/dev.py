@@ -38,3 +38,5 @@ if env_setting('USE_DEBUG_TOOLBAR') == 'true':
 
 # add django-extensions to apps
 INSTALLED_APPS += ('django_extensions', )
+
+
