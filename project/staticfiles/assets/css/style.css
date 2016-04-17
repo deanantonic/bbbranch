@@ -141,7 +141,7 @@ a:focus {
 
 .subscribe-submit {
 	right: 0;
-}
+}*/
 
 .btn-download {
 	background: #FDE3A7;
@@ -200,7 +200,7 @@ a:focus {
 	-webkit-appearance: none;
 	font-weight: normal !important;
 }
-*/
+
 /* HEADER SECTION */
 
 
@@ -223,7 +223,9 @@ a:focus {
     width: 535px;
     clear: both;
     margin-left: 30%;
-    align: center;
+    margin-right: 30%;
+    display: inline-block;
+    text-align: center;
     margin-bottom: 10%;
     margin-top: 10%;
 
@@ -252,10 +254,10 @@ a:focus {
 
 
 #submit:hover {
-    border: 1px solid #999;color:#000;
+    border: 0px solid #999;color:#000;
     background: #03FF31;
     color:#fff;
-    font-size: 32px;
+
 }
 
 
