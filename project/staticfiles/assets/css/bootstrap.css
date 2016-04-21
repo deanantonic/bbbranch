@@ -5,6 +5,23 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+
+/* carousel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 30%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

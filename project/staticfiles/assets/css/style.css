@@ -10,7 +10,6 @@
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-/*
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
@@ -66,7 +65,7 @@ body {
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 80px; padding-bottom: 80px;}
-.big {font-size: 72px}
+.big {font-size: 72px}    /* added this to original */
 
 .clear {
 	clear: both;
@@ -150,7 +149,7 @@ a:focus {
 
 .btn-conf {
 	border-radius: 50px;
-
+                                   /* removed this to original */
 	font-size: 11px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -211,12 +210,6 @@ a:focus {
 
 	background: #D3D9DB;
 }
-/* carousel */
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 40%;
-    margin: auto;
-}
 
 /* contact form */
 
@@ -265,20 +258,6 @@ a:focus {
 
 /* sidebar */
 
-.top {
-    position:absolute;
-    left:0; right:0;
-    height: 92px;
-}
-.left {
-    position:absolute;
-    left:0; top:92px; bottom: 0;
-    width: 178px;
-}
-.main {
-    position: absolute;
-    left:178px; top:92px; right:0; bottom:0;
-}
 
 
 
