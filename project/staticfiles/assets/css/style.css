@@ -213,6 +213,12 @@ a:focus {
 
 /* contact form */
 
+
+input, textarea {
+    width: 100%;
+}
+
+
 .form {
     width: 535px;
     clear: both;
@@ -222,6 +228,11 @@ a:focus {
     text-align: center;
     margin-bottom: 10%;
     margin-top: 10%;
+    clear: both;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+
 
 }
 .form input {
