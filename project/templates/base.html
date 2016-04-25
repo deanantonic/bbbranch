@@ -61,7 +61,7 @@
 
 
 
-
+{% block about %}{%endblock%}
 
 
 {% block header %}
@@ -228,7 +228,10 @@
 
 {% block content %}{% endblock %}
 
-{% block footer %}
+
+
+
+
     <div id="f">
       <div class="container">
         <div class="row centered">
@@ -241,7 +244,7 @@
         </div>
       </div><!--/container-->
     </div><!--/.F-->
-{% endblock %}
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 {% render_block "js" postprocessor "compressor.contrib.sekizai.compress" %}
