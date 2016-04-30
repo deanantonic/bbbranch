@@ -8,11 +8,6 @@
 
 
 
-
-
-
-
-
 {% block about %}
 
     <!-- About Section -->
@@ -21,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">{% placeholder "topsubheading" %}</h3>
                 </div>
             </div>
             <div class="row">
@@ -33,11 +28,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class ="year">2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4 class ="year">{% placeholder "year1" %}</h4>
+                                    <h4 class="subheading">{% placeholder "title1" %}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">{% placeholder "description1" %}</p>
                                 </div>
                             </div>
                         </li>
@@ -47,25 +42,26 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class ="year">March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4 class ="year">{% placeholder "year2" %}</h4>
+                                    <h4 class="subheading">{% placeholder "title2" %}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">{% placeholder "description2" %}</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="{% static "assets/img/portabout/3p.jpg" %}" alt="">
+                                
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class ="year">December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4 class ="year">{% placeholder "year3" %}</h4>
+                                    <h4 class="subheading">{% placeholder "title3" %}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">{% placeholder "description3" %}</p>
                                 </div>
                             </div>
                         </li>
@@ -75,14 +71,14 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class ="year">July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4 class ="year">{% placeholder "year4" %}</h4>
+                                    <h4 class="subheading">{% placeholder "title4" %}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">{% placeholder "description4" %}</p>
                                 </div>
-                            </div>
-                        </li>
+                            </div> 
+                        </li>   
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4 class ="year">Be Part

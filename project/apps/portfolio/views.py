@@ -8,8 +8,8 @@ from portfolio.models import PortfolioItem
 
 
 def index(request):
-    items = PortfolioItem.objects.all()
-    return render(request, 'portfolio/index.html', {'object_list': items})
+    items = PortfolioItem.objects.all() # add [:1] to show only the first object
+    return render(request, 'portfolio/index.html', {'object_list': items}) 
 
 
 def single(request, pk):
@@ -21,3 +21,4 @@ def single(request, pk):
     obj.new_visit()
 
     return render(request, 'portfolio/single.html', {'object': obj})
+
