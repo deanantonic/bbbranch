@@ -80,6 +80,8 @@ INSTALLED_APPS = [
     'utils',
     'portfolio',
     'contact_form',
+    'blog',
+
 ]
 
 
