@@ -20,7 +20,7 @@
 <link href="{% static "assets/css/bootstrap.css" %}" rel="stylesheet">
 <link href="{% static "assets/css/ionicons.min.css" %}" rel="stylesheet"> 
 <link href="{% static "assets/css/style.css" %}" rel="stylesheet">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
       
 {% endaddtoblock %}
@@ -58,10 +58,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">BASIC.</a>
+          <a class="navbar-brand" href="/"><i class="fa fa-home fa-fw" aria-hidden="true"></i>BASIC.</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav"> 
              {% show_menu 0 1 100 100 %}
           </ul>
         </div><!--/.nav-collapse -->
@@ -247,7 +247,7 @@
       <div class="container">
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
-            <a href="#"><i class="ion-social-twitter"></i></a>
+            <a href="#"><i class="ion-social-twitter"></i></a> <!-- font awesome icons -->
             <a href="#"><i class="ion-social-dribbble"></i></a>
             <a href="#"><i class="ion-social-instagram"></i></a>
             <a href="#"><i class="ion-social-facebook"></i></a>
