@@ -1,5 +1,38 @@
-{% extends "default.html" %}
-{% load sekizai_tags staticfiles %}
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags staticfiles %}
+
+{% block header %}
+    <div id="h">
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <br/>
+            <br/>
+            <h1>{% page_attribute "page_title" %}</h1>
+          </div>
+        </div><!--/row-->
+
+        <div class="row mt">
+          <div class="col-sm-4">
+            <i class="ion-ios7-monitor-outline"></i>
+            <h3>Web Design</h3>
+          </div><!--/col-md-4-->
+
+          <div class="col-sm-4">
+            <i class="ion-ios7-browsers-outline"></i>
+            <h3>UI Development</h3>
+          </div><!--/col-md-4-->
+
+          <div class="col-sm-4">
+            <i class="ion-ios7-copy-outline"></i>
+            <h3>Brand Identity</h3>
+          </div><!--/col-md-4-->
+        
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--H-->
+{% endblock %}
+
 
 {% block body %}
 
@@ -110,7 +143,7 @@
 
 {% addtoblock 'js' %}
 
-     <script>
+<script>
 // Portfolio
 (function($) {
   "use strict";
@@ -197,4 +230,17 @@
 {% endblock %}
 
 
-{% block homecontent %}{% endblock %}
+{% block footer %}
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#"><i class="ion-social-twitter"></i></a> <!-- font awesome icons -->
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+          </div><!--/col-md-8-->
+        </div>
+      </div><!--/container-->
+    </div><!--/.F-->
+{% endblock %}

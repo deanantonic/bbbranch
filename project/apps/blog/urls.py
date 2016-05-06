@@ -9,7 +9,7 @@ urlpatterns = [
 
 
 
-    url(r'^$', 'blog.views.index', name='blog_index'),
+    
     url(
         r'^blog/view/(?P<slug>[^\.]+).html', 
         'blog.views.view_post', 
@@ -18,6 +18,7 @@ urlpatterns = [
         r'^blog/category/(?P<slug>[^\.]+).html', 
         'blog.views.view_category', 
         name='view_blog_category'),
+    url(r'^$', 'blog.views.index', name='blog_index'),
 
 
 

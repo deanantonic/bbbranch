@@ -1,4 +1,8 @@
-{% extends "default.html" %}
+{% extends "base.html" %}
+
+
+
+
 
 {% block content %}
 <div class="form">
@@ -11,10 +15,21 @@
     <input type="submit" value="Submit" id="submit">
   </form>
 </div>
-
-
 {% endblock content %}
-{% block homecontent %}{% endblock %}
 
 
+{% block footer %}
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#"><i class="ion-social-twitter"></i></a> <!-- font awesome icons -->
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+          </div><!--/col-md-8-->
+        </div>
+      </div><!--/container-->
+    </div><!--/.F-->
+{% endblock %}
 

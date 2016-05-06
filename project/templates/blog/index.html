@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+
+
+
+
+
+
+
+
+{% block content %} 
+    <div id="buttons">
+      <div class="container ptb">
+        <div class="row">
+
+
+
+
+    <h2 class="centered big"><i class="fa fa-pencil-square-o" aria-hidden="true"> Posts</i></h2>
+    {% if posts %}
+        <div class="list-group">
+        {% for post in posts %}
+            <li class="list-group-item"><a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a></li>
+        {% endfor %}
+        </div>
+    {% else %}
+        <p>There are no posts.</p>
+    {% endif %}
+    
+
+
+
+    <h2 class="centered big"><i class="fa fa-tags" aria-hidden="true"> Categories</i></h2>
+    {% if categories %}
+        <div class="list-group">
+        {% for category in categories %}
+            <li class="list-group-item"><a href="{{ category.get_absolute_url }}"><h2>{{ category.title }}</h2></a></li>
+        {% endfor %}
+        </div>
+    {% else %}
+        <p>There are no posts.</p>
+    {% endif %}
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock %}  
+
+
+{% block footer %}
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#"><i class="ion-social-twitter"></i></a> <!-- font awesome icons -->
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+          </div><!--/col-md-8-->
+        </div>
+      </div><!--/container-->
+    </div><!--/.F-->
+{% endblock %}

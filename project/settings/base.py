@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     'contact_form',
     'blog',
 
+
 ]
 
 
@@ -241,9 +242,15 @@ CMS_SEO_FIELDS = True
 CMS_HIDE_UNTRANSLATED = True
 CMS_REDIRECTS = True
 CMS_TEMPLATES = [
+    ('base.html', _('Base')),
     ('default.html', _('Default')),
     ('about.html', _('About')),
+    ('home.html', _('Home')),
     ('with_sidebar.html', _('Sidebar')),
+    ('view_category.html', _('Category')),
+    ('index.html', _('Index')),
+    ('view_post.html', _('Post')),
+    ('contact_form.html', _('Contact')),
 ]
 CMS_PLACEHOLDER_CONF = {
     'body': {
